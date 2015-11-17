@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ethan Mannette</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<style type="text/css">
+/*<!--*/
+body {
+	font-size: 62.5%;
+	font-family: "Montserrat", sans-serif;
+	background-color: #171717;
+	color: #eeeeee;
+}
+.main-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+}
+a {
+	color: #aaaaaa;
+	text-decoration: none;
+	-webkit-transition: color 0.175s ease 0.05s;
+	   -moz-transition: color 0.175s ease 0.05s;
+	        transition: color 0.175s ease 0.05s;
+}
+a:visited {
+	color: #aaaaaa;
+}
+a:hover,
+a:focus {
+	color: #777777;
+	text-decoration: none;
+}
+.header {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 10%;
+}
+.section {
+	padding: 1em 1em 0 1em;
+	margin-bottom: 1em;
+}
+.section .fa.left {
+	margin-right: 0.25em;
+}
+h1 {
+	color: #eeeeee;
+	font-size: 2em;
+	margin: 1em 0 0;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 3.5em;
+	margin: 0.83em 0;
+	text-transform: uppercase;
+}
+h3 {
+	color: #aaaaaa;
+	font-size: 1.75em;
+	margin: 1em 0 0;
+}
+h4 {
+	color: #666666;
+	font-size: 1.25em;
+	margin: 0 0 1em;
+}
+.profile {
+	font-family: "Montserrat";
+	font-size: 1em;
+	margin: 0;
+}
+.profile-name {
+	display: none;
+}
+.contact-header {
+	font-weight: bold;
+}
+.contact-list li,
+.contact-list a {
+	color: #eeeeee;
+}
+.label {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+}
+.fa {
+	font-size: 2em;
+}
+.left {
+	font-size: 1em;
+}
+.main {
+	margin: 0 10% 5em;
+}
+.skills {
+	margin-bottom: 0.5em;
+}
+p {
+	color: #aaaaaa;
+	font-family: "Open Sans";
+	font-size: 1.5em;
+}
+li {
+	color: #aaaaaa;
+	font-family: "Open Sans";
+	font-size: 1.5em;
+}
+.list-lines,
+.list-lines li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-lines li {
+	font-family: "Montserrat";
+	font-size: 1em;
+}
+.list-set,
+.list-set li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-set li {
+	font-family: "Montserrat";
+	display: inline-block;
+}
+.list-set li a {
+	display: inline-block;
+}
+.list-set li .fa {
+	min-width: 1em;
+	min-height: 1em;
+}
+/*Minor adjustment to icons.*/
+.list-set li .fa-stack-overflow:before {
+	font-size: 0.9em;
+	position: relative;
+	top: -0.05em;
+}
+.list-set.keywords {
+	overflow: hidden;
+}
+.list-set.keywords li {
+	background-color: #444444;
+	color: #eeeeee;
+	padding: 0.4em 0.5em;
+	font-size: 1.2em;
+	display: inline-block;
+	margin: 1px;
+	float: left;
+}
+.profiles-list {
+	margin-top: 0.75em;
+}
+blockquote {
+	margin: 2em 1em;
+	padding: 1em;
+	border-left: 0.75em solid #666666;
+	font-family: "Open Sans";
+	font-size: 1.5em;
+}
+blockquote .name {
+	font-weight: bold;
+	font-family: "Montserrat";
+	margin-top: 1em;
+}
+::-moz-selection {
+	background: #666666;
+}
+::selection {
+	background: #666666;
+}
+@media (max-width: 768px) {
+	body {
+		font-size: 50%;
+	}
+	.header {
+		margin: 0 5%;
+	}
+	.main {
+		margin: 0 5%;
+	}
+}
+@media print {
+	body {
+		background: #FFFFFF;
+		color: #171717;
+	}
+	.main-wrap {
+		width: 100%;
+	}
+	.main {
+		margin: 0 0 1em 0;
+	}
+	.section {
+		page-break-inside: avoid;
+	}
+	.main .section:last-child {
+		margin-bottom: 0;
+	}
+	a {
+		color: #555555;
+	}
+	a:visited {
+		color: #555555;
+	}
+	a:hover,
+	a:focus {
+		color: #555555;
+	}
+	h1 {
+		color: #111111;
+		margin-top: 0.5em;
+	}
+	h2 {
+		margin: 0.25em 0;
+	}
+	h3 {
+		color: #555555;
+	}
+	h4 {
+		color: #bbbbbb;
+	}
+	.contact-list li,
+	.contact-list a {
+		color: #111111;
+	}
+	p {
+		color: #555555;
+	}
+	li {
+		color: #555555;
+	}
+	.list-set.keywords li {
+		background-color: transparent;
+		color: #555555;
+		border: 1px solid #aaaaaa;
+	}
+	blockquote {
+		border-color: #999999;
+	}
+	* {
+		/*Avoid printing the color at the start of the transition (Chrome issue).*/
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		        transition: none !important;
+
+	}
+}
+.screenshot {
+	height: 120px;
+	width: 120px;
+}
+.break {
+	width: 125px;
+	float: left;
+}
+.projects {
+	float: left;
+	width: 320px;
+	display: inline-block;
+	padding: 25px;
+}
+
+/*-->*/
+		</style>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="main-wrap">
+			<header class="header">
+				<h1>Ethan Mannette</h1>
+				<h3 class="label">Programmer</h3>
+				<ul id="contact" class="contact-list list-lines">
+					<li class="contact-header">(303) 842-0692</li>
+					<li class="contact-header"><a href="/cdn-cgi/l/email-protection#8aeffee2ebe4e7ebe4e4effefeefcaede7ebe3e6a4e9e5e7"><span class="__cf_email__" data-cfemail="f590819d949b98949b9b90818190b59298949c99db969a98">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */
+</script></a></li>
+				</ul>
+				<ul id="profiles" class="profiles-list list-set">
+					<li><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ethanmannette" class="profile" title="LinkedIn"><i class="fa fa-linkedin"></i><span class="profile-name">LinkedIn</span></a></li>
+					<li><a href="https:&#x2F;&#x2F;github.com&#x2F;Mannette" class="profile" title="GitHub"><i class="fa fa-github"></i><span class="profile-name">GitHub</span></a></li>
+					<li><a href="https:&#x2F;&#x2F;www.facebook.com&#x2F;ethan.mannette" class="profile" title="Facebook"><i class="fa fa-facebook"></i><span class="profile-name">Facebook</span></a></li>
+				</ul>
+			</header>
+			<main role="main" class="main">
+				<section id="about" class="section">
+					<h2><i class="fa fa-user left"></i>About</h2>
+					<p>Ethan originates from Ottawa, Canada. He is currently going through the galvanize Full-Stack immersive program, set to end in December. Ethan first started working at a golf course and later moved on to a bakery, because he decided getting burned from ovens was better than the sun..SPOILER ALERT, its not. Through his previous jobs, he has learned extensively about team work and communication, though his non-work interests range widely, everything from quantum mechanics to metaphysics. He could tell you about it, but quantumly he already has.</p>
+				</section>
+
+				<section id="projects" class="section allProjects">
+					<h2><i class="fa fa-stack-overflow left"></i>Projects</h2>
+					<section class="section-sub section-sub-projects projects">
+						<h3>Mario Quiz Racer</h3>
+						<img class="screenshot" src="images/marioQuiz.png">
+						<h4><a href="https://github.com/Mannette/gschool_front-end-personal-project">Link to GitHub</a></h4>
+						<li>
+							<h4>Individual Project</h4>
+						</li>
+						<p>The first project done while attending Galvanize. Implemented in OOP, using basics of HTML, CSS, Javascript, and JQuery.</p>
+					</section>
+					<section class="section-sub section-sub-projects projects">
+						<h3>Fibonacci Canvas</h3>
+						<img class="screenshot" src="images/funWithCanvas.png">
+						<h4><a href="https://github.com/Mannette/canvas-fibStuff">Link to GitHub</a></h4>
+						<li>
+							<h4>Personal Project</h4>
+						</li>
+						<p>A project made during free time to visualize the Fibonacci sequence and Fibonacci spiral on the canvas element using only Javascript.</p>
+					</section>
+					<section class="section-sub section-sub-projects projects">
+						<h3>Canvas Fractals</h3>
+						<img class="screenshot" src="images/canvasFractals.png">
+						<h4><a href="https://github.com/Mannette/canvas-fractals">Link to GitHub</a></h4>
+						<li>
+							<h4>Personal Project</h4>
+						</li>
+						<p>Another project made during free time to create some fractal trees using the canvas element and Javascript.</p>
+					</section>
+					<section class="section-sub section-sub-projects projects">
+						<h3>Github Stats</h3>
+						<img class="screenshot" src="images/githubStats.png">
+						<h4><a href="https://github.com/Mannette/gschool_angular-project/tree/draft2">Link to GitHub</a></h4>
+						<li>
+							<h4>Group Project</h4>
+						</li>
+						<h3>People in Group</h3>
+						<hr class="break">&nbsp
+						<span class="groupProject">
+							<li>
+								<span>Ethan Mannette</span>
+							</li>
+							<li>
+								<span>Suhayl Faris</span>
+							</li>
+						</span>
+						<p>A group project done using pair programming to display a user's GitHub stats on one page. The technologies used in this project are: Angular, MongoDB, Express, Node.js, Passport, Bootstrap, Javascript, CSS, and the Github API.</p>
+					</section>
+					<section class="section-sub section-sub-projects projects">
+						<h3>Translator Quiz</h3>
+						<img class="screenshot" src="images/translatorQuiz.png">
+						<h4><a href="https://github.com/Mannette/translator">Link to GitHub</a></h4>
+						<li>
+							<h4>Group Project</h4>
+						</li>
+						<h3>People in Group</h3>
+						<hr class="break">&nbsp
+						<span class="groupProject">
+							<li>
+								<span>Kyle Rattet</span>
+							</li>
+							<li>
+								<span>Bradley Bouley</span>
+							</li>
+							<li>
+								<span>Ethan Mannette</span>
+							</li>
+							<li>
+								<span>Suhayl Faris</span>
+							</li>
+							<li>
+								<span>Ben Hassara</span>
+							</li>
+						</span>
+						<p>A group project done using a feature branch workflow to create a translation quiz app. The technologies implemented into the project are: CSS, HTML, Javascript, Bing API, JQuery, MongoDB.</p>
+					</section>
+					<section class="section-sub section-sub-projects projects">
+						<h3>Roulette</h3>
+						<img class="screenshot" src="images/error.png">
+						<h4><a href="https://github.com/Mannette/newRoulette">Link to GitHub</a></h4>
+						<li>
+							<h4>Group Project</h4>
+						</li>
+						<h3>People in Group</h3>
+						<hr class="break">&nbsp
+						<span class="groupProject">
+							<li>
+								<span>Lance Powers</span>
+							</li>
+							<li>
+								<span>Ethan Mannette</span>
+							</li>
+							<li>
+								<span>Crystal Omara</span>
+							</li>
+							<li>
+								<span>Suhayl Faris</span>
+							</li>
+							<li>
+								<span>Lucy Cifferello</span>
+							</li>
+						</span>
+						<p>A group project to create a casino game, started the first month at Galvanize and then revisited during the last months. The technologies implemented into the project are: CSS, HTML, Javascript, and JQuery.</p>
+					</section>
+
+				</section>
+
+				<section id="skills" class="section">
+					<h2><i class="fa fa-tasks left"></i>Skills</h2>
+					<section class="section-sub section-sub-skill">
+						<h3 class="skills">Web Development</h3>
+						<ul class="list-set keywords">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Javascript</li>
+							<li>Jquery</li>
+							<li>MongoDB</li>
+							<li>Angular</li>
+							<li>PostgreSQL</li>
+							<li>Passport</li>
+							<li>Express</li>
+						</ul>
+					</section>
+					<section class="section-sub section-sub-skill">
+						<h3 class="skills">Image Manipulation</h3>
+						<ul class="list-set keywords">
+							<li>Photoshop</li>
+						</ul>
+					</section>
+					<section class="section-sub section-sub-skill">
+						<h3 class="skills">Miscellaneous</h3>
+						<ul class="list-set keywords">
+							<li>Teamwork</li>
+							<li>Problem Solving</li>
+							<li>Critical Thinking</li>
+							<li>Being the best</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="work" class="section">
+					<h2><i class="fa fa-suitcase left"></i>Work Experience</h2>
+					<section class="section-sub section-sub-job">
+						<h3>Bakery clerk, Produce clerk, Safeway</h3>
+						<h4>January 2014 - July 2015</h4>
+						<p>A grocery store commited to the customer experience. Within the store are many departments: Deli, Bakery, Produce, Seafood, Meat, and a Pharmacy. Bakery and produce were known to be some of the hardest positions to fill due to the workload and speed of production. This didn&#39;t scare Ethan though, he doesn&#39;t shy away from a challenge.</p>
+						<h4>Highlights</h4>
+						<ul>
+							<li>Team work</li>
+							<li>Deadline driven environment</li>
+							<li>Fast paced</li>
+							<li>Time Management</li>
+							<li>Production</li>
+						</ul>
+					</section>
+					<section class="section-sub section-sub-job">
+						<h3>Maintenance, South Suburban</h3>
+						<h4>June 2009 - November 2013</h4>
+						<p>The Lone Tree Golf Course required getting up in the wee hours of the morning. The course needs daily maintenance, 90% of the time involving some type of cutting grass or moving sand. The other ten percent is dodging golf balls. The hardest part of the job are the mornings. There is only about an hour between starting and the first tee-off.</p>
+						<h4>Highlights</h4>
+						<ul>
+							<li>Team work</li>
+							<li>Individual work</li>
+							<li>Learning&#x2F;teaching on the job</li>
+							<li>Master of dodging golf balls</li>
+						</ul>
+					</section>
+				</section>
+				<section id="education" class="section">
+					<h2><i class="fa fa-graduation-cap left"></i>Education</h2>
+					<section class="section-sub section-sub-education">
+						<h3> - Galvanize</h3>
+						<h4>July 2015 - Present</h4>
+						<p>Web development</p>
+						<h4>Courses</h4>
+						<ul>
+							<li>Full-Stack immersive program</li>
+						</ul>
+					</section>
+					<section class="section-sub section-sub-education">
+						<h3>Bachelor - Arapahoe Community College</h3>
+						<h4>March 2014 - May 2014</h4>
+						<p>Gen Eds</p>
+						<h4>Courses</h4>
+						<ul>
+							<li>College Algebra</li>
+							<li>English</li>
+							<li>Interpersonal Communication</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="interests" class="section">
+					<h2><i class="fa fa-star left"></i>Interests</h2>
+					<section class="section-sub section-sub-interest">
+						<h3 class="skills">Wildlife</h3>
+						<ul class="list-set keywords">
+							<li>Dogs</li>
+							<li>Cats</li>
+							<li>Apes</li>
+							<li>Birds</li>
+							<li>Aquatic animals</li>
+						</ul>
+					</section>
+					<section class="section-sub section-sub-interest">
+						<h3 class="skills">Sports</h3>
+						<ul class="list-set keywords">
+							<li>Hockey</li>
+						</ul>
+					</section>
+					<section class="section-sub section-sub-interest">
+						<h3 class="skills">Video Games</h3>
+						<ul class="list-set keywords">
+							<li>PC games</li>
+							<li>Playing</li>
+							<li>Developing</li>
+						</ul>
+					</section>
+				</section>
+				<section id="languages" class="section">
+					<h2><i class="fa fa-quote-left left"></i>Languages</h2>
+					<section class="section-sub section-sub-language">
+						<h3>English</h3>
+						<h4>Fluency: Native speaker</h4>
+					</section>
+					<section class="section-sub section-sub-language">
+						<h3>Spanish</h3>
+						<h4>Fluency: Beginner</h4>
+					</section>
+				</section>
+				<section id="references" class="section">
+					<h2><i class="fa fa-thumbs-up left"></i>References</h2>
+					<blockquote>
+
+						<div class="name">- Bryce Jankowski</div>
+					</blockquote>
+					<blockquote>
+
+						<div class="name">- Bill Pennstrom</div>
+					</blockquote>
+					<blockquote>
+
+						<div class="name">- Stephen Barela</div>
+					</blockquote>
+					<blockquote>
+
+						<div class="name">- Ed Rocket</div>
+					</blockquote>
+				</section>
+			</main>
+		</div>
+	<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
